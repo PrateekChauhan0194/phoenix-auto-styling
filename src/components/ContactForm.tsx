@@ -76,7 +76,7 @@ export default function ContactForm() {
       <button disabled={isSubmitting} className="px-5 py-3 rounded-2xl bg-ember text-black font-semibold shadow-glow hover:scale-105 transition">
         {isSubmitting ? 'Sending...' : 'Send Request'}
       </button>
-      <p className="text-xs text-silver/60 mt-2">Submitting will open your email client prefilled—hook this up to a serverless email/CRM when ready.</p>
+      {/* <p className="text-xs text-silver/60 mt-2">Submitting will open your email client prefilled—hook this up to a serverless email/CRM when ready.</p> */}
     </form>
   )
 }

@@ -16,7 +16,18 @@ export default function Contact() {
           <p>Email: <a className="hover:text-ember" href={"mailto:" + site.email}>{site.email}</a></p>
           <p>Address: {site.address}</p>
           <div className="rounded-xl border border-graphite p-4">
-            <div className="text-sm">Studio Map (embed your map iframe here)</div>
+            <div className="text-xs uppercase tracking-wide text-silver/70 mb-2">Studio Map</div>
+            <div className="aspect-[4/3] w-full rounded-lg overflow-hidden">
+              <iframe
+                title="Map: 21 Hemsworth St, Donnybrook VIC 3064"
+                className="w-full h-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                src={`https://www.google.com/maps?q=${encodeURIComponent('21 Hemsworth St, Donnybrook VIC 3064')}&output=embed`}
+                allowFullScreen
+              />
+            </div>
+            <p className="mt-2 text-xs text-silver/60">Tap map to open in Google Maps.</p>
           </div>
         </div>
       </div>
