@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+/* subtle carbon fiber noise using a gradient */
+.bg-carbon-texture {
+  background: radial-gradient(transparent 0px, rgba(255,255,255,0.03) 1px), radial-gradient(transparent 0px, rgba(0,0,0,0.15) 1px);
+  background-size: 4px 4px, 8px 8px;
+  background-position: 0 0, 1px 1px;
+}
