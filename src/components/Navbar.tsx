@@ -7,6 +7,7 @@ const nav = [
   { to: '/services', label: 'Services' },
   { to: '/gallery', label: 'Gallery' },
   { to: '/color-library', label: 'Color Library' },
+  { to: '/aftercare', label: 'Aftercare' },
   { to: '/pricing', label: 'Pricing' },
   { to: '/reviews', label: 'Reviews' },
   { to: '/about', label: 'About' },
@@ -24,15 +25,15 @@ export default function Navbar() {
           </Link>
           <nav className="hidden md:flex items-center gap-6">
             {nav.map(n => (
-              <NavLink key={n.to} to={n.to} className={({isActive}) => 
+              <NavLink key={n.to} to={n.to} className={({ isActive }) =>
                 'text-sm uppercase tracking-wide hover:text-ember transition ' + (isActive ? 'text-ember' : 'text-silver')}>
                 {n.label}
               </NavLink>
             ))}
           </nav>
           <div className="flex items-center gap-4">
-            <a href={site.instagram} target="_blank" rel="noreferrer" className="hover:text-ember"><FaInstagram/></a>
-            <a href={site.facebook} target="_blank" rel="noreferrer" className="hover:text-ember"><FaFacebook/></a>
+            <a href={site.instagram} target="_blank" rel="noreferrer" className="hover:text-ember"><FaInstagram /></a>
+            <a href={site.facebook} target="_blank" rel="noreferrer" className="hover:text-ember"><FaFacebook /></a>
             <a href="tel:+61434233588" className="ml-2 px-3 py-1 rounded-xl bg-ember text-black font-medium shadow-glow hover:scale-105 transition">
               Call
             </a>
