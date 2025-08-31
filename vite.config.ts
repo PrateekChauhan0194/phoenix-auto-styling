@@ -12,6 +12,7 @@ export default defineConfig({
       components: resolve(rootDir, 'src/components'),
       data: resolve(rootDir, 'src/data'),
       pages: resolve(rootDir, 'src/pages'),
+      assets: resolve(rootDir, 'src/assets'),
     }
   }
 })
