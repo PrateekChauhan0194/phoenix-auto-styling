@@ -31,7 +31,6 @@ export default function Pricing() {
       <div className="mt-8">
         <a href="/contact" className="px-5 py-3 rounded-2xl bg-ember text-black font-semibold shadow-glow hover:scale-105 transition">Get exact quote</a>
       </div>
-      <div className="mt-4 text-xs text-silver/60">No financing page, no downloadable PDFs—kept intentionally simple as requested.</div>
     </main>
   )
 }
