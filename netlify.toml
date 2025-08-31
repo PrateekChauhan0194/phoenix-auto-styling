@@ -1,0 +1,6 @@
+# Netlify configuration for SPA routing
+# Ensures all client-side routes are served index.html (React Router)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
