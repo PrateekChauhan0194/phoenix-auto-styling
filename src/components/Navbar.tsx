@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { site } from '../config/site'
 import { FaInstagram, FaFacebook } from 'react-icons/fa'
 import { HiBars3, HiXMark } from 'react-icons/hi2'
+import logo from 'assets/logo.png'
 
 const nav = [
   { to: '/', label: 'Home' },
@@ -35,8 +36,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center gap-3 group" onClick={handleLinkClick}>
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-ember to-phoenixGold shadow-glow" />
-            <div className="font-heading tracking-wider text-xl text-white group-hover:text-ember transition">Phoenix Auto Styling</div>
+            {/* <div className="w-8 h-8 rounded-full bg-gradient-to-br from-ember to-phoenixGold shadow-glow" /> */}
+            <img src={logo} alt="Phoenix Auto Styling" className="h-8" />
+            {/* <div className="font-heading tracking-wider text-xl text-white group-hover:text-ember transition">Phoenix Auto Styling</div> */}
           </Link>
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-6">
